@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color :hsl(225, 100%, 94%);
+    --primary-color:hsl(0,0,100%);
+    --second-color:hsl(225, 100%, 98%);
+    --back-color: hsl(224, 23%, 55%);
+    --text-color: hsl(223, 47%, 23%);
+    --payment-color:hsl(245, 75%, 52%);
+}
+body{
+    background-image: url('images/pattern-background-desktop.svg');
+    background-color: var(--body-color);
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* z-index: 1; */
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: auto; 
+    background: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 12%;
+}
+.main img.top {
+    width: 350px; 
+    border-radius: 15px 15px 0 0;
+}
+.main .contain{
+    background: var(--second-color);
+    position: relative;
+    /* left: -5px; */
+    padding: 15px;
+    width: 250px;
+    height: 70px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main h2{
+    padding: 10px;
+}
+.main .text{
+    margin: 0 25px;
+    padding: 5px;
+    text-align: center;
+    color: var(--back-color);
+}
+.main .contain{
+    position: relative;
+    margin: 5px; 
+    padding: 10px;
+    width: 280px;
+}
+.main .contain img{
+    position: absolute;
+    left: 10px;
+}
+.main .contain h4{
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+.main .contain p{
+    position: absolute;
+    bottom: 8px;
+    left: 45px;
+}
+.main .contain a{
+    position: absolute;
+    right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.main .payment{
+    width: 280px;
+    margin: 10px;
+    padding: 15px;
+    background: var(--payment-color);
+    color: var(--second-color);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px hsla(225, 100%, 94%,0.5),
+    0px 6px 20px hsla(245, 75%, 52%,0.5);
+}
+.main .cancel{
+    outline: none;
+    margin: 20px 0 30px;
+    border: none;
+    background: none;
+    color: var(--back-color);
+    font-weight: 700;
+}
+.main .contain a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsla(245, 75%, 52%,0.7);
+}
+.main .payment:hover{
+    cursor: pointer;
+    background: hsla(245, 75%, 52%,0.7);
+}
+.main .cancel:hover{
+    cursor: pointer;
+    color: var(--text-color);
+}
